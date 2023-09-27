@@ -18,7 +18,7 @@ class CarFactory extends Factory
     {
         return [
             'title' => $this->faker->name(),
-            'description' => $this->faker->sentence($nbWords = 1, $variableNbWords = true),
+            'seat' => $this->faker->randomNumber(1, true),
             'image_path' => $this->faker->image('public/storage/', 800, 600, null, false),
             'price' => $this->faker->randomNumber(4, true)
         ];
